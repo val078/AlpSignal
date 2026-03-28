@@ -330,7 +330,6 @@ fun SimpleLineChart(data: List<Float>, labels: List<String>, lineColor: Color, f
             textAlign = android.graphics.Paint.Align.CENTER
         }
         labels.forEachIndexed { i, label ->
-            // Muestra solo cada 4 años para no amontonar
             if (i % 4 == 0) {
                 drawContext.canvas.nativeCanvas.drawText(label, xOf(i), h + 20f, paint)
             }

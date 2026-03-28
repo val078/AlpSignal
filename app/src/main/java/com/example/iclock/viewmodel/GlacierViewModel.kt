@@ -44,7 +44,6 @@ class GlacierViewModel : ViewModel() {
     private fun loadGlacierData() {
         viewModelScope.launch {
             try {
-                // ── Documento principal ───────────────
                 val doc = db.collection("glaciers")
                     .document("mer_de_glace")
                     .get()
@@ -57,7 +56,6 @@ class GlacierViewModel : ViewModel() {
                 val metrics     = doc.get("model_metrics") as? Map<*, *>
                 val rfR2        = (metrics?.get("random_forest_r2") as? Double)?.toFloat() ?: 0f
 
-                // ── Histórico ─────────────────────────
                 val historicalSnap = db.collection("glaciers")
                     .document("mer_de_glace")
                     .collection("historical")
@@ -76,7 +74,6 @@ class GlacierViewModel : ViewModel() {
                     )
                 }
 
-                // ── Predicciones ──────────────────────
                 val predictionsSnap = db.collection("glaciers")
                     .document("mer_de_glace")
                     .collection("predictions")
