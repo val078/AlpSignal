@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "15909769321",
+    "project_id": "iclock-95d79",
+    "storage_bucket": "iclock-95d79.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:15909769321:android:61d23aa47b628ab352d2f8",
+        "android_client_info": {
+          "package_name": "com.example.iclock"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCVyxDNGJeTH0vn1b-As7fZWfqkFlGh0qs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
